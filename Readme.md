@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Катя Дробот](https://up.htmlacademy.ru/adaptive/17/user/87575).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://up.htmlacademy.ru/adaptive/17/user/6613).
 
 ---
 
