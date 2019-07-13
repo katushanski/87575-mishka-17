@@ -1,0 +1,95 @@
+<<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-image" src="http://placehold.it/86x35" alt="Логотип интернет-магазина Мишка">
+    </a>
+    <nav class="top-menu">
+      <button class="top-menu__toggle" type="button"></button>
+      <ul class="top-menu__nav site-nav">
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="top-menu__nav user-nav">
+        <li>
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li>
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header> <!-- можно ли не следовать назначению блоков по фотошопу? -->
+
+  <main class="main">
+    <section class="catalog-products">
+      <h1 class="catalog-products__header-1">Каталог товаров</h1>
+      <h2 class="visually-hidden">Товары</h2>
+      <ul>
+        <li>
+          <a href="#">
+          <h3>
+            <span class="catalog-category">Зайчик-попрыгайчик</span>
+            <span class="catalog-item-title">Рост 30 см, вес 200 г</span>
+          </h3>
+          <p class="catalog__item-image">
+            <img src="img/product-1.jpg" width="260" height="150" alt="Фото Зайчика">
+          </p>
+        </a>
+        <p class="catalog-item-price">
+          <b>2 900 ₽</b>
+          <button class="modal__submit-button" href="#"></button>
+        </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="catalog-video"><!-- 6.3. В блоке видеоплеера «Процесс производства» необходимо реализовать контейнер для плеера с видеозаписью (скрипт видеоплеера на страницу добавлять не нужно, достаточно добавить только изображение из макета). -->
+      <h2 class="visually-hidden">Видео для каталога</h2>
+      <h3 class="catalog-video__title">Процесс производства</h3>
+      <img  class="catalog-video__video" src="http://placehold.it/260x150" alt="Видео">
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="button catalog-video__button" href="#">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer-wrapper">
+      <div class="social-buttons">
+        <ul class="social-buttons__list">
+          <li class="social-buttons__item">
+            <a class="social-buttons__link"href="#" >
+              <span class="visually-hidden">Мишка в инстаграме<!-- тут будет свг  --></span>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link"href="#" >
+              <span class="visually-hidden">Мишка в фейсбуке<!-- тут будет свг  --></span>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link"href="#" >
+              <span class="visually-hidden">Мишка в твиттере<!-- тут будет свг  --></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="website-by">
+        <span>Разработано</span>
+        <a href="#"><!-- тут будет свг  --></a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
