@@ -32,22 +32,52 @@
   </header> <!-- можно ли не следовать назначению блоков по фотошопу? -->
 
   <main class="main">
-    <section class="catalog-products">
-      <h1 class="catalog-products__header-1">Каталог товаров</h1>
+    <section class="catalog">
+      <h1 class="title catalog__title">Каталог товаров</h1>
       <h2 class="visually-hidden">Товары</h2>
-      <ul>
-        <li>
+      <ul class="catalog__list">
+        <li class="catalog__item">
           <a href="#">
           <h3>
-            <span class="catalog-category">Зайчик-попрыгайчик</span>
-            <span class="catalog-item-title">Рост 30 см, вес 200 г</span>
+            <span class="catalog__category">Зайчик-попрыгайчик</span>
+            <span class="catalog__item-title">Рост 30 см, вес 200 г</span>
           </h3>
           <p class="catalog__item-image">
-            <img src="img/product-1.jpg" width="260" height="150" alt="Фото Зайчика">
+            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото Зайчика">
           </p>
         </a>
-        <p class="catalog-item-price">
-          <b>2 900 ₽</b>
+        <p class="catalog__item-price">
+          <b>1200 руб.</b>
+          <button class="modal__submit-button" href="#"></button>
+        </p>
+        </li>
+        <li class="catalog__item">
+          <a href="#">
+          <h3>
+            <span class="catalog__category">Корзинка для белья</span>
+            <span class="catalog__item-title">Диаметр 15 см, высота 10 см</span>
+          </h3>
+          <p class="catalog__item-image">
+            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото корзинки">
+          </p>
+        </a>
+        <p class="catalog__item-price">
+          <b>690 руб.</b>
+          <button class="modal__submit-button" href="#"></button>
+        </p>
+        </li>
+        <li class="catalog__item">
+          <a href="#">
+          <h3>
+            <span class="catalog__category">Большая корзинка для игрушек</span>
+            <span class="catalog__item-title">Диаметр 30 см, высота 30 см</span>
+          </h3>
+          <p class="catalog__item-image">
+            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото большой корзинки">
+          </p>
+        </a>
+        <p class="catalog__item-price">
+          <b>1500 руб.</b>
           <button class="modal__submit-button" href="#"></button>
         </p>
         </li>
@@ -65,7 +95,7 @@
 
   <footer class="footer">
     <section class="footer-wrapper">
-      <div class="social-buttons">
+      <div class="social-buttons footer__social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
             <a class="social-buttons__link"href="#" >
