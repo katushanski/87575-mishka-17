@@ -32,7 +32,56 @@
   </header> <!-- можно ли не следовать назначению блоков по фотошопу? -->
 
 	<main class="main">
-
+    <section class="form">
+      <div class="form__description">
+        <h1 class="form__title">Вязание на заказ</h1>
+        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+      <div class="form__wrapper">
+        <form class="form__order">
+          <fieldset class="form__radio-fieldset">
+            <legend>Тип</legend>
+            <ul class="form__radio-list">
+              <li>
+                <input class="form__radio" type="radio" id="accessory-toggle" name="toggle" value="accessory">
+                <label for="accessory-toggle">Аксессуар для интерьера</label>
+              </li>
+              <li>
+                <input class="form__radio" type="radio" id="toy-toggle" name="toggle" value="toy">
+                <label for="accessory-toggle">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__radio-checkbox"> <!-- можно не назначать класс? -->
+            <legend>Цвет</legend>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox" type="checkbox" id="checkbox-white" name="checkbox"> <!-- id тоже надо по БЭМу прописывать? -->
+              <label for="accessory-toggle">Белый</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox" type="checkbox" id="checkbox-gray" name="checkbox">
+              <label for="accessory-toggle">Серый</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox" type="checkbox" id="checkbox-tiffany" name="checkbox">
+              <label for="accessory-toggle">«Тиффани»</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox" type="checkbox" id="checkbox-black" name="checkbox"> <!-- id тоже надо по БЭМу прописывать? -->
+              <label for="accessory-toggle">Черный</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox" type="checkbox" id="checkbox-rose" name="checkbox">
+              <label for="accessory-toggle">Розовый</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input class="form__checkbox" type="checkbox" id="checkbox-orange" name="checkbox">
+              <label for="accessory-toggle">Оранжевый</label>
+            </li>
+          </fieldset>
+        </form>
+      </div>
+    </section>
 	</main>
 
 	<footer class="footer">
