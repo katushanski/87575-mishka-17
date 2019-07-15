@@ -1,0 +1,125 @@
+<<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-image" src="http://placehold.it/86x35" alt="Логотип интернет-магазина Мишка">
+    </a>
+    <nav class="top-menu">
+      <button class="top-menu__toggle" type="button"></button>
+      <ul class="top-menu__nav site-nav">
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="top-menu__nav user-nav">
+        <li>
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li>
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header> <!-- можно ли не следовать назначению блоков по фотошопу? -->
+
+  <main class="main">
+    <section class="catalog">
+      <h1 class="title catalog__title">Каталог товаров</h1>
+      <h2 class="visually-hidden">Товары</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a href="#">
+          <h3>
+            <span class="catalog__category">Зайчик-попрыгайчик</span>
+            <span class="catalog__item-title">Рост 30 см, вес 200 г</span>
+          </h3>
+          <p class="catalog__item-image">
+            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото Зайчика">
+          </p>
+        </a>
+        <p class="catalog__item-price">
+          <b>1200 руб.</b>
+          <button class="modal__submit-button" href="#"></button>
+        </p>
+        </li>
+        <li class="catalog__item">
+          <a href="#">
+          <h3>
+            <span class="catalog__category">Корзинка для белья</span>
+            <span class="catalog__item-title">Диаметр 15 см, высота 10 см</span>
+          </h3>
+          <p class="catalog__item-image">
+            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото корзинки">
+          </p>
+        </a>
+        <p class="catalog__item-price">
+          <b>690 руб.</b>
+          <button class="modal__submit-button" href="#"></button>
+        </p>
+        </li>
+        <li class="catalog__item">
+          <a href="#">
+          <h3>
+            <span class="catalog__category">Большая корзинка для игрушек</span>
+            <span class="catalog__item-title">Диаметр 30 см, высота 30 см</span>
+          </h3>
+          <p class="catalog__item-image">
+            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото большой корзинки">
+          </p>
+        </a>
+        <p class="catalog__item-price">
+          <b>1500 руб.</b>
+          <button class="modal__submit-button" href="#"></button>
+        </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="catalog-video"><!-- 6.3. В блоке видеоплеера «Процесс производства» необходимо реализовать контейнер для плеера с видеозаписью (скрипт видеоплеера на страницу добавлять не нужно, достаточно добавить только изображение из макета). -->
+      <h2 class="visually-hidden">Видео для каталога</h2>
+      <h3 class="catalog-video__title">Процесс производства</h3>
+      <img  class="catalog-video__video" src="http://placehold.it/260x150" alt="Видео">
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="button catalog-video__button" href="#">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer-wrapper">
+      <div class="social-buttons footer__social-buttons">
+        <ul class="social-buttons__list">
+          <li class="social-buttons__item">
+            <a class="social-buttons__link"href="#" >
+              <span class="visually-hidden">Мишка в инстаграме<!-- тут будет свг  --></span>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link"href="#" >
+              <span class="visually-hidden">Мишка в фейсбуке<!-- тут будет свг  --></span>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link"href="#" >
+              <span class="visually-hidden">Мишка в твиттере<!-- тут будет свг  --></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="website-by">
+        <span>Разработано</span>
+        <a href="#"><!-- тут будет свг  --></a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
