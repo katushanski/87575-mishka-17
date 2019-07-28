@@ -1,0 +1,27 @@
+.website-by {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 27px 0;
+}
+
+.website-by__link,
+.website-by__link:hover,
+.website-by__link:visited {
+
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bold;
+  color: $black;
+
+  text-decoration: none;
+}
+
+.website-by__link:disabled {
+  color: #a8a8a8;
+}
+
+.website-by__link svg {
+  margin-left: 30px;
+}

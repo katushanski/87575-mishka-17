@@ -1,131 +1,144 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header wrapper">
+    <div class="header__container">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="http://placehold.it/86x35" alt="Логотип интернет-магазина Мишка">
+      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
     </a>
+    <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+        <!-- здесь будут иконки -->
+    </button>
+    </div>
     <nav class="top-menu">
-      <button class="top-menu__toggle" type="button"></button>
       <ul class="top-menu__nav site-nav">
-        <li>
-          <a href="#">Каталог товаров</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li>
-          <a href="#">Вязание на заказ</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="top-menu__nav user-nav">
-        <li>
-          <a href="#">Поиск по сайту</a>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li>
-          <a href="#">Корзина: пока пуста</a>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <section class="form">
-      <div class="form__description">
-        <h1 class="form__title">Вязание на заказ</h1>
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <section class="order">
+      <div class="order__description">
+        <h1 class="order__title">Вязание на заказ</h1>
+        <p class="order__paragraph">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
-      <div class="form__wrapper">
-        <form class="form__order" action="https://echo.htmlacademy.ru" method="post">
+      <div class="order__wrapper">
+        <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="form__fieldset fieldset fieldset__type">
+          <fieldset class="order-form__fieldset fieldset">
             <legend>Тип</legend>
             <ul class="fieldset__radio-list">
-              <li class="fieldset__radio-item">
-                <input class="fieldset__radio" type="radio" id="accessory-toggle" name="toggle" value="accessory">
+              <li class="fieldset__radio radio">
+                <input class="radio__input" type="radio" id="accessory-toggle" name="toggle" value="accessory">
                 <label for="accessory-toggle">Аксессуар для интерьера</label>
               </li>
-              <li class="fieldset__radio-item">
-                <input class="fieldset__radio" type="radio" id="toy-toggle" name="toggle" value="toy">
+              <li class="fieldset__radio radio">
+                <input class="radio__input" type="radio" id="toy-toggle" name="toggle" value="toy">
                 <label for="toy-toggle">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset__color">
+          <fieldset class="order-form__fieldset fieldset">
             <legend>Цвет</legend>
-            <li class="fieldset__checkbox-item">
-              <input class="fieldset__checkbox" type="checkbox" id="checkbox-white" name="checkbox"> <!-- id тоже надо по БЭМу прописывать? -->
-              <label for="checkbox-white">Белый</label>
-            </li>
-            <li class="fieldset__checkbox-item">
-              <input class="fieldset__checkbox" type="checkbox" id="checkbox-grey" name="checkbox">
-              <label for="checkbox-grey">Серый</label>
-            </li>
-            <li class="fieldset__checkbox-item">
-              <input class="fieldset__checkbox" type="checkbox" id="checkbox-tiffany" name="checkbox">
-              <label for="checkbox-tiffany">«Тиффани»</label>
-            </li>
-            <li class="fieldset__checkbox-item">
-              <input class="fieldset__checkbox" type="checkbox" id="checkbox-black" name="checkbox"> <!-- id тоже надо по БЭМу прописывать? -->
-              <label for="checkbox-black">Черный</label>
-            </li>
-            <li class="fieldset__checkbox-item">
-              <input class="fieldset__checkbox" type="checkbox" id="checkbox-rose" name="checkbox">
-              <label for="checkbox-rose">Розовый</label>
-            </li>
-            <li class="fieldset__checkbox-item">
-              <input class="fieldset__checkbox" type="checkbox" id="checkbox-orange" name="checkbox">
-              <label for="checkbox-orange">Оранжевый</label>
-            </li>
+            <ul class="fieldset__checkbox-list">
+              <li class="fieldset__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-white" name="checkbox">
+                <label for="checkbox-white">Белый</label>
+              </li>
+              <li class="fieldset__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-grey" name="checkbox">
+                <label for="checkbox-grey">Серый</label>
+              </li>
+              <li class="fieldset__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-tiffany" name="checkbox">
+                <label for="checkbox-tiffany">«Тиффани»</label>
+              </li>
+              <li class="fieldset__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-black" name="checkbox">
+                <label for="checkbox-black">Черный</label>
+              </li>
+              <li class="fieldset__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-rose" name="checkbox">
+                <label for="checkbox-rose">Розовый</label>
+              </li>
+              <li class="fieldset__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox-orange" name="checkbox">
+                <label for="checkbox-orange">Оранжевый</label>
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset__personal-data">
+          <fieldset class="order-form__fieldset fieldset">
             <legend>ФИО</legend>
-            <li class="fieldset__name-item">
-              <input class="name-field" type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
-              <label for="name-field">Имя:</label>
-            </li>
-            <li class="fieldset__surname-item">
-              <input class="surname-field" type="text" name="surname-field" id="surname-field" placeholder="Укажите фамилию*" required>
-              <label for="surname-field">Фамилия:</label>
-            </li>
-            <li>
-              <input class="patronymic-field" type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
-              <label for="patronymic-field">Отчество:</label>
-            </li>
+            <ul class="fieldset__text-list">
+              <li class="fieldset__text text">
+                <input class="text__input" type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
+                <label for="name-field">Имя:</label>
+              </li>
+              <li class="fieldset__text text">
+                <input class="text__input" type="text" name="surname-field" id="surname-field" placeholder="Укажите фамилию*" required>
+                <label for="surname-field">Фамилия:</label>
+              </li>
+              <li>
+                <input class="text__input" type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
+                <label for="patronymic-field">Отчество:</label>
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset__phone">
+          <fieldset class="order-form__fieldset fieldset">
             <legend>Тел</legend>
-            <li class="fieldset__phone-item">
-              <input class="phone-field" type="tel" name="phone-field" id="phone-field" placeholder="+7 XXX XX XX*" required>
-              <label for="phone-field"></label> <!-- нужно ли это прописывать здесь? -->
-            </li>
+            <ul class="fieldset__phone-list">
+              <li class="fieldset__phone phone">
+                <input class="phone__input" type="tel" name="phone-field" id="phone-field" placeholder="+7 XXX XX XX*" required>
+                <label for="phone-field"></label> <!-- нужно ли это прописывать здесь? -->
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset__email">
+          <fieldset class="form__fieldset fieldset">
             <legend>E-mail</legend>
-            <li class="fieldset__email-item">
-              <input class="email-field" type="email" email="email-field" id="email-field" placeholder="Ваш Email*" required>
-              <label for="email-field"></label><!-- нужно ли это прописывать здесь? -->
-            </li>
-
+            <ul class="fieldset__email-list">
+              <li class="fieldset__email email">
+                <input class="email__input" type="email" email="email-field" id="email-field" placeholder="Ваш Email*" required>
+                <label for="email-field"></label><!-- нужно ли это прописывать здесь? -->
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset__additional">
+          <fieldset class="order-form__fieldset fieldset">
             <legend>Доп</legend>
-            <li class="fieldset__additional-item">
-              <input class="additional-field" type="textarea" name="additional-field" id="additional-field" placeholder="Опишите все ваши пожелания к заказу">
-              <label for="additional-field"></label><!-- нужно ли это прописывать здесь? -->
-            </li>
+            <ul class="fieldset__additional-list">
+              <li class="fieldset__additional additional">
+                <input class="additional__input" type="textarea" name="additional-field" id="additional-field" placeholder="Опишите все ваши пожелания к заказу">
+                <label for="additional-field"></label><!-- нужно ли это прописывать здесь? -->
+              </li>
+            </ul>
           </fieldset>
 
-          <div class="form__bottom">
-            <p class="form__required-text">*Поля обязательны для заполнения</p>
-            <button class="form__submit-button" type="submit">Отправить заказ</button>
+          <div class="order-form__bottom">
+            <p class="order-form__required-text">*Поля обязательны для заполнения</p>
+            <button class="order-form__submit-button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </div>
@@ -133,30 +146,38 @@
   </main>
 
   <footer class="footer">
-    <section class="footer-wrapper">
+    <section class="wrapper">
       <div class="social-buttons footer__social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в инстаграме<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в инстаграме</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в фейсбуке<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в фейсбуке</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в твиттере<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в твиттере</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
         </ul>
       </div>
 
       <div class="website-by">
-        <span>Разработано</span>
-        <a href="#"><!-- тут будет свг  --></a>
+        <a class="website-by__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разработано</span>
+          <!-- тут будет свг  -->
+        </a>
       </div>
     </section>
   </footer>

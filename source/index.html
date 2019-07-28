@@ -3,99 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header wrapper">
+    <div class="header__container">
     <a class="header__logo">
-      <img class="header__logo-image" src="http://placehold.it/86x35" alt="Логотип интернет-магазина Мишка">
+      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
     </a>
+    <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+        <!-- здесь будут иконки -->
+    </button>
+    </div>
     <nav class="top-menu">
-      <button class="top-menu__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="top-menu__nav site-nav">
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li>
-          <a href="form.html">Вязание на заказ</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="top-menu__nav user-nav">
-        <li>
-          <a href="#">Поиск по сайту</a>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li>
-          <a href="#">Корзина: пока пуста</a>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <section class="introduction main-introduction">
-      <h1 class="introduction__title">Милые штуки ручной работы для дома</h1>
+    <section class="introduction">
+      <div class="introduction__inner wrapper">
+        <h1 class="introduction__inner-title">Милые штуки ручной<br/>работы для дома</h1>
+      </div>
+      <div class="introduction__links">
       <a class="introduction__link--interior" href="#">
         <div class="introduction__option--interior">
-          <p class="introduction__paragraph">Предметы интерьера</p>
+          <p class="introduction__paragraph wrapper">Предметы<br/>интерьера</p>
         </div>
       </a>
       <a class="introduction__link--toys" href="#">
         <div class="introduction__option--toys">
-          <p class="introduction__paragraph">Детские игрушки</p>
+          <p class="introduction__paragraph wrapper">Детские<br/>игрушки</p>
         </div>
+      </div>
       </a>
     </section>
 
     <section class="featured">
-      <div class ="featured__top">
-        <h2 class="title featured__top-title--carts">Вязаные корзинки</h2>
-        <h3 class="title featured__top-title--product">Товар недели</h3>
+      <div class ="featured__top wrapper">
+        <h2 class="featured__title featured__title--carts">Вязаные корзинки</h2>
+        <h3 class="featured__title featured__title--product">Товар недели</h3>
         <p class="featured__top-paragraph">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="table featured__top-table">
           <tr class="table__row">
-            <td>Цвет:</td>
-            <td>«Тиффани»/серый</td>
+            <td class="table__header">Цвет:</td>
+            <td class="table__data">«Тиффани»/серый</td>
           </tr>
           <tr class="table__row">
-            <td>Диаметр:</td>
-            <td>25 см</td>
+            <td class="table__header">Диаметр:</td>
+            <td class="table__data">25 см</td>
           </tr>
           <tr class="table__row">
-            <td>Высота:</td>
-            <td>15 см</td>
+            <td class="table__header">Высота:</td>
+            <td class="table__data">15 см</td>
           </tr>
         </table>
       </div>
-      <div class="featured__bottom">
-        <img class="featured__bottom-image" src="" alt="Фото товара недели">
+      <div class="featured__bottom wrapper">
+        <img class="featured__bottom-image" src="../img/triple-set-mobile@1x.jpg" alt="Фото товара недели" width="260" height="315">
         <span class="featured__bottom-span">Цена 990 руб.</span>
         <button class="featured__bottom-button">Заказать</button>
       </div>
     </section>
 
-    <section class="modal modal--window">
-      <h2 class="title modal__title">Добавить в корзину</h2>
-      <p class="modal__paragraph">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__checkbox-wrapper">
-          <input class="form__checkbox--small" type="checkbox" name="small" id="small">
-          <label for="small">S</label>
+    <section class="modal modal--window modal--hide">
+      <div class="modal__overlay">
+        <div class="modal__inner wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__paragraph">Выберите размер:</p>
+          <form class="modal__size-form size-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="size-form__checkbox-wrapper">
+              <ul class="size-form__size-list">
+                <li class="size-form__size-item">
+                  <input class="size-form__checkbox" type="checkbox" name="small" id="small">
+                  <label for="small">S</label>
+                </li>
+                <li class="size-form__size-item">
+                  <input class="size-form__checkbox" type="checkbox" name="medium" id="medium">
+                  <label for="medium">M</label>
+                </li>
+                <li class="size-form__size-item">
+                  <input class="size-form__checkbox" type="checkbox" name="large" id="large">
+                  <label for="large">L</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="modal__submit-button" type="submit">Добавить</button>
+          </form>
         </div>
-        <div class="form__checkbox-wrapper">
-          <input class="form__checkbox--medium" type="checkbox" name="medium" id="medium">
-          <label for="medium">M</label>
-        </div>
-        <div class="form__checkbox-wrapper">
-          <input class="form__checkbox--large" type="checkbox" name="large" id="large">
-          <label for="large">L</label>
-        </div>
-        <button class="modal__submit-button" type="submit">Добавить</button>
-      </form>
+      </div>
     </section>
 
-    <section class="about">
-      <h2 class="title about__title">Коротко о нас:</h2>
+    <section class="about wrapper">
+      <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
         <li class="about__item about__item--flower">Экологически чистые материалы</li>
         <li class="about__item about__item--ruble">Скандинавский стиль по российской цене</li>
@@ -106,68 +121,79 @@
     </section>
 
     <section class="reviews">
-      <h2 class="title reviews__title">Отзывы</h2>
-      <div class="slider reviews__slider">
-      <blockquote class="reviews__item slider__item">
-        <p class="review__paragraph">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="review__author-name">Анастасия Красильникова</cite>
-        <p class="review__author-tag">@misssssiskras</p>
-      </blockquote>
-      <blockquote class="reviews__item slider__item">
-        <p class="review__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <cite class="review__author-name">Марк Цицерон</cite>
-        <p class="review__author-tag">@marcuscicero</p>
-      </blockquote>
+      <div class="reviews__inner wrapper">
+      <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__items">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__paragraph">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <p class="reviews__author-tag">@misssssiskras</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <cite class="reviews__author-name">Марк Цицерон</cite>
+            <p class="reviews__author-tag">@marcuscicero</p>
+          </blockquote>
+        </div>
       </div>
-      <p class="reviews__arrows slider__arrows">
+      <p class="reviews__arrows slider__arrows wrapper">
         <button class="slider__arrow" type="button"><!-- здесь будет свг --></button>
         <button class="slider__arrow" type="button"><!-- здесь будет свг --></button>
       </p>
-      <a class="reviews__link" href="#">Написать</a>
+      <div class="reviews__button wrapper">
+      <a class="reviews__button-link" href="#">Написать</a>
     </section>
 
-    <section class="contacts">
-      <h2 class="title contacts__title">Контакты</h2>
+    <section class="contacts wrapper">
+      <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table">
         <tr class="contacts__table-row">
           <td>e-mail:</td>
-          <td>info@mimimishkashop.ru</td>
+          <td><a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
         </tr>
         <tr class="contacts__table-row">
           <td>адрес:</td>
           <td>г. Санкт-Петербург,<br/>ул. Большая Конюшенная,<br/>д. 19/8, офис 101</td>
         </tr>
       </table>
-      <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCsreBJ~" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+      <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCsreBJ~" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
       <a class="contacts__link" href="#">Напишите нам</a>
     </section>
   </main>
 
   <footer class="footer">
-    <section class="footer-wrapper">
+    <section class="wrapper">
       <div class="social-buttons footer__social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в инстаграме<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в инстаграме</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в фейсбуке<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в фейсбуке</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в твиттере<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в твиттере</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
         </ul>
       </div>
 
       <div class="website-by">
-        <span>Разработано</span>
-        <a href="#"><!-- тут будет свг  --></a>
+        <a class="website-by__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разработано</span>
+          <!-- тут будет свг  -->
+        </a>
       </div>
     </section>
   </footer>

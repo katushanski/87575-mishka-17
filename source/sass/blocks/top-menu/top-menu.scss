@@ -1,0 +1,20 @@
+.top-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-menu__toggle {
+  width: 20px;
+  height: 20px;
+
+  background-color: #8d0000;
+
+  border: none;
+  outline: none;
+}
+
+.top-menu__nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,37 @@
+.size-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.size-form__checkbox-wrapper {
+  padding: 0;
+  border: none;
+}
+
+.size-form__size-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.size-form__size-item {
+  min-width: 82px;
+  margin-right: 8px;
+  border: 2px solid $cyan;
+  list-style: none;
+  text-align: center;
+}
+
+.size-form__size-item input {
+  position: absolute;
+  left: -9999px;
+}
+
+.size-form__size-item label {
+  padding: 16px 0;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+}

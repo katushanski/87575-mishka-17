@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;/*
+  @include wrapper; */
+}
+
+.header__logo {
+  margin: auto;
+
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__container {
+  display: flex;
+  font-direction: row;
+  align-items: center;
+  padding: 20px 0;
+}

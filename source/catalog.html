@@ -3,52 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header wrapper">
+    <div class="header__container">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="http://placehold.it/86x35" alt="Логотип интернет-магазина Мишка">
+      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
     </a>
+    <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+        <!-- здесь будут иконки -->
+    </button>
+    </div>
     <nav class="top-menu">
-      <button class="top-menu__toggle" type="button"></button>
       <ul class="top-menu__nav site-nav">
-        <li>
-          <a href="#">Каталог товаров</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link">Каталог товаров</a>
         </li>
-        <li>
-          <a href="#">Вязание на заказ</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="top-menu__nav user-nav">
-        <li>
-          <a href="#">Поиск по сайту</a>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li>
-          <a href="#">Корзина: пока пуста</a>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
-  </header> <!-- можно ли не следовать назначению блоков по фотошопу? -->
+  </header>
 
   <main class="main">
     <section class="catalog">
-      <h1 class="title catalog__title">Каталог товаров</h1>
+      <div class="catalog__title-wrapper">
+        <h1 class="title catalog__title wrapper">Каталог товаров</h1>
+      </div>
       <h2 class="visually-hidden">Товары</h2>
-      <ul class="catalog__list">
-        <li class="product product__item">
+      <ul class="catalog__products product wrapper">
+        <li class="product__item">
           <a href="#">
-          <h3>
-            <span class="product__category">Зайчик-попрыгайчик</span>
-            <span class="product__title">Рост 30 см, вес 200 г</span>
-          </h3>
-          <p class="product__image">
-            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото Зайчика">
-          </p>
+            <p class="product__image">
+              <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото Зайчика">
+            </p>
+          </a>
+          <div class="product__description">
+            <a href="#">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="product__paragraph">Рост 30 см, вес 200 г</p>
+          </div>
         </a>
         <p class="product__price">
           <b>1200 руб.</b>
-          <button class="modal__submit-button" href="#"></button>
+          <button class="product__button modal__submit-button" href="#"></button>
         </p>
         </li>
         <li class="product__item">
@@ -117,7 +126,7 @@
 
       <div class="website-by">
         <span>Разработано</span>
-        <a href="#"><!-- тут будет свг  --></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><!-- тут будет свг  --></a>
       </div>
     </section>
   </footer>

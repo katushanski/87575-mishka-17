@@ -1,0 +1,30 @@
+//Fonts
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans", "Roboto";
+  font-style: normal;
+  src: url("fonts/opensans.woff2") format("woff2"), url("fonts/opensans.woff") format("woff"), url("fonts/roboto.woff2") format("woff2"), url("fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans", "Roboto";
+  font-style: normal;
+  src: url("fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff"), url("fonts/robotobold.woff2") format("woff2"), url("fonts/robotobold.woff") format("woff");
+}
+
+//General Styles
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "Open Sans", "Roboto", sans-serif;
+  color: $black;
+  background-color: $white;
+}

@@ -1,0 +1,12 @@
+.catalog__title-wrapper {
+  display: flex;
+
+  padding: 73px 0;
+
+  background-color: $grey;
+}
+
+.catalog__products {
+  display: flex;
+  flex-direction: column;
+}
