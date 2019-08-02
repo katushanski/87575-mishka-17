@@ -1,6 +1,7 @@
 .order-form {
   display: flex;
   flex-direction: column;
+
   @include wrapper;
 }
 
@@ -47,5 +48,6 @@
   padding: 15px;
   border: 2px solid $black;
   font-family: "Open Sans", "Roboto", sans-serif;
+
   @include placeholder;
 }
