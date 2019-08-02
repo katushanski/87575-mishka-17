@@ -1,0 +1,51 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  @include wrapper;
+}
+
+.fieldset legend {
+  @include form-legend;
+}
+
+.fieldset ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset li {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  list-style: none;
+}
+
+.fieldset label {
+  margin-left: 63px;
+  margin-bottom: 20px;
+}
+
+.fieldset__text-list label {
+  margin-left: 0;
+}
+
+.fieldset .text__input,
+.fieldset .phone__input,
+.fieldset .email__input {
+  @include text-input;
+  @include placeholder;
+}
+
+.phone__input::-webkit-input-placeholder {
+  @include placeholder;
+}
+
+.additional__input {
+  padding: 15px;
+  border: 2px solid $black;
+  font-family: "Open Sans", "Roboto", sans-serif;
+  @include placeholder;
+}

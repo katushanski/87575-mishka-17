@@ -6,6 +6,8 @@
   font-weight: bold;
   text-align: left;
   color: $black;
+
+  @include wrapper;
 }
 
 .about__title {

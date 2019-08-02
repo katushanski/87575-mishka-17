@@ -4,6 +4,10 @@
   background-color: #f1f1f1;
 }
 
+.footer__wrapper {
+  @include wrapper;
+}
+
 .social-buttons__item {
   list-style: none;
 }

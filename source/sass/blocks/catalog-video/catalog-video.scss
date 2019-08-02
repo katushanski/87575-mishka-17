@@ -1,0 +1,32 @@
+.catalog-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include wrapper;
+  padding-bottom: 33px;
+}
+
+.catalog-video__title {
+  margin: 29px 0 23px 90px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog-video p {
+  margin-left: 35px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.catalog-video__button {
+  display: block;
+  width: 190px;
+  padding: 18px 0 14px;
+  box-sizing: border-box;
+
+  @include white-button;
+}

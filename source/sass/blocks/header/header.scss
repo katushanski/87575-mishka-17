@@ -1,8 +1,10 @@
 .header {
   display: flex;
   flex-direction: column;
-  width: 100%;/*
-  @include wrapper; */
+  width: 100%;
+  box-sizing: border-box;
+
+  @include wrapper;
 }
 
 .header__logo {

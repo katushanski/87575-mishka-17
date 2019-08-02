@@ -6,7 +6,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header wrapper">
+  <header class="header">
     <div class="header__container">
     <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
@@ -38,10 +38,10 @@
   <main class="main">
     <section class="catalog">
       <div class="catalog__title-wrapper">
-        <h1 class="title catalog__title wrapper">Каталог товаров</h1>
+        <h1 class="catalog__title">Каталог товаров</h1>
       </div>
       <h2 class="visually-hidden">Товары</h2>
-      <ul class="catalog__products product wrapper">
+      <ul class="catalog__products product">
         <li class="product__item">
           <a href="#">
             <p class="product__image">
@@ -54,41 +54,46 @@
             </a>
             <p class="product__paragraph">Рост 30 см, вес 200 г</p>
           </div>
-        </a>
-        <p class="product__price">
-          <b>1200 руб.</b>
-          <button class="product__button modal__submit-button" href="#"></button>
-        </p>
+          <p class="product__price">
+            <b>1200 руб.</b>
+            <button class="js-modal product__button" href="#"></button>
+          </p>
         </li>
+
         <li class="product__item">
           <a href="#">
-          <h3>
-            <span class="product__category">Корзинка для белья</span>
-            <span class="product__title">Диаметр 15 см, высота 10 см</span>
-          </h3>
-          <p class="product__image">
-            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото корзинки">
+            <p class="product__image">
+              <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото корзинки">
+            </p>
+          </a>
+          <div class="product__description">
+            <a href="#">
+              <h3 class="product__title">Корзинка для белья</h3>
+            </a>
+            <p class="product__paragraph">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <p class="product__price">
+            <b>690 руб.</b>
+            <button class="js-modal product__button" href="#"></button>
           </p>
-        </a>
-        <p class="product__price">
-          <b>690 руб.</b>
-          <button class="modal__submit-button" href="#"></button>
-        </p>
         </li>
+
         <li class="product__item">
           <a href="#">
-          <h3>
-            <span class="product__category">Большая корзинка для игрушек</span>
-            <span class="product__title">Диаметр 30 см, высота 30 см</span>
-          </h3>
-          <p class="product__image">
-            <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото большой корзинки">
+            <p class="product__image">
+              <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото большой корзинки">
+            </p>
+          </a>
+          <div class="product__description">
+            <a href="#">
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="product__paragraph">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <p class="product__price">
+            <b>1500 руб.</b>
+            <button class="js-modal product__button" href="#"></button>
           </p>
-        </a>
-        <p class="product__price">
-          <b>1500 руб.</b>
-          <button class="modal__submit-button" href="#"></button>
-        </p>
         </li>
       </ul>
     </section>
@@ -98,35 +103,43 @@
       <h3 class="catalog-video__title">Процесс производства</h3>
       <img  class="catalog-video__video" src="http://placehold.it/260x150" alt="Видео">
       <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="button catalog-video__button" href="#">Сделать заказ</a>
+      <a class="catalog-video__button" href="#">Сделать заказ</a>
     </section>
   </main>
 
   <footer class="footer">
-    <section class="footer-wrapper">
+    <section class="footer__wrapper">
       <div class="social-buttons footer__social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в инстаграме<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в инстаграме</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в фейсбуке<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в фейсбуке</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link"href="#" >
-              <span class="visually-hidden">Мишка в твиттере<!-- тут будет свг  --></span>
+            <a class="social-buttons__link" href="#">
+              <span class="visually-hidden">Мишка в твиттере</span>
+              <span class="temporary-background"></span>
+              <!-- тут будет свг  -->
             </a>
           </li>
         </ul>
       </div>
 
       <div class="website-by">
-        <span>Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><!-- тут будет свг  --></a>
+        <a class="website-by__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разработано</span>
+          <!-- тут будет свг  -->
+        </a>
       </div>
     </section>
   </footer>

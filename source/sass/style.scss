@@ -1,22 +1,26 @@
 // Config
 @import "./variables.scss";
-@import "./scaffolding.scss";
 @import "./mixins.scss";
-
+@import "./scaffolding.scss";
 
 // Blocks
 @import "blocks/about/about.scss";
 @import "blocks/catalog/catalog.scss";
+@import "blocks/catalog-video/catalog-video.scss";
 @import "blocks/contacts/contacts.scss";
 @import "blocks/featured/featured.scss";
+@import "blocks/fieldset/fieldset.scss";
 @import "blocks/footer/footer.scss";
 @import "blocks/header/header.scss";
 @import "blocks/introduction/introduction.scss";
 @import "blocks/modal/modal.scss";
+@import "blocks/order/order.scss";
+@import "blocks/order-form/order-form.scss";
 @import "blocks/product/product.scss";
 @import "blocks/reviews/reviews.scss";
 @import "blocks/site-nav/site-nav.scss";
 @import "blocks/size-form/size-form.scss";
+@import "blocks/slider/slider.scss";
 @import "blocks/social-buttons/social-buttons.scss";
 @import "blocks/top-menu/top-menu.scss";
 @import "blocks/user-nav/user-nav.scss";

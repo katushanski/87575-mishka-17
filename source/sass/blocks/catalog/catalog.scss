@@ -6,7 +6,20 @@
   background-color: $grey;
 }
 
+.catalog__title {
+  box-sizing: border-box;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+
+  @include wrapper;
+}
+
 .catalog__products {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }

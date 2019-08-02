@@ -1,24 +1,19 @@
-.introduction {
-  background-color: #fafafa;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .introduction__inner {
   display: block;
   width: 100%;
   height: 282px;
 
   margin: 0;
-  padding: 75px 0;
-
+  padding: 75px 0 0;
+  background-color: #fafafa;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 95%;
 }
 
 .introduction__inner-title {
   width: 100%;
-  margin-top: 70px;
-  padding: 0;
+  margin: 0;
 
   font-size: 27px;
   line-height: 30px;
@@ -26,6 +21,8 @@
   text-align: center;
 
   color: $black;
+
+  background-color: transparent;
 }
 
 .introduction__link--interior {
@@ -51,6 +48,8 @@
   vertical-align: center;
 
   color: $white;
+
+  @include wrapper;
 }
 
 .introduction__link--toys {

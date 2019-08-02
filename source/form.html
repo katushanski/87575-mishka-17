@@ -37,11 +37,13 @@
 
   <main class="main">
     <section class="order">
-      <div class="order__description">
+      <div class="order__title-wrapper">
         <h1 class="order__title">Вязание на заказ</h1>
+      </div>
+      <div class="order__paragraph-wrapper">
         <p class="order__paragraph">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
-      <div class="order__wrapper">
+      <div class="order__form-wrapper">
         <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
 
           <fieldset class="order-form__fieldset fieldset">
@@ -92,16 +94,16 @@
             <legend>ФИО</legend>
             <ul class="fieldset__text-list">
               <li class="fieldset__text text">
-                <input class="text__input" type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
                 <label for="name-field">Имя:</label>
+                <input class="text__input" type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
               </li>
               <li class="fieldset__text text">
-                <input class="text__input" type="text" name="surname-field" id="surname-field" placeholder="Укажите фамилию*" required>
                 <label for="surname-field">Фамилия:</label>
+                <input class="text__input" type="text" name="surname-field" id="surname-field" placeholder="Укажите фамилию*" required>
               </li>
               <li>
-                <input class="text__input" type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
                 <label for="patronymic-field">Отчество:</label>
+                <input class="text__input" type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
@@ -116,7 +118,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset fieldset">
+          <fieldset class="order-form__fieldset fieldset">
             <legend>E-mail</legend>
             <ul class="fieldset__email-list">
               <li class="fieldset__email email">
@@ -130,7 +132,7 @@
             <legend>Доп</legend>
             <ul class="fieldset__additional-list">
               <li class="fieldset__additional additional">
-                <input class="additional__input" type="textarea" name="additional-field" id="additional-field" placeholder="Опишите все ваши пожелания к заказу">
+                <textarea class="additional__input" type="textarea" rows="6" name="additional-field" id="additional-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 <label for="additional-field"></label><!-- нужно ли это прописывать здесь? -->
               </li>
             </ul>
@@ -138,7 +140,9 @@
 
           <div class="order-form__bottom">
             <p class="order-form__required-text">*Поля обязательны для заполнения</p>
-            <button class="order-form__submit-button" type="submit">Отправить заказ</button>
+            <div class="order-form__bottom-wrapper">
+              <button class="order-form__submit-button" type="submit">Отправить заказ</button>
+            </div>
           </div>
         </form>
       </div>
