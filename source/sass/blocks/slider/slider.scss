@@ -1,0 +1,30 @@
+//================================СЛАЙДЕР======================================
+
+.slider__item {
+  display: none;
+}
+
+.slider__item:nth-of-type(1) {
+  display: block;
+}
+
+//==============================================================================
+
+.slider__arrows {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.slider__arrow {
+  flex-basis: 50%;
+
+  height: auto;
+
+  margin-top: 25px;
+  padding: 13px 0;
+  border: 1px solid #ececec;
+  background-color: $white;
+  cursor: pointer;
+}

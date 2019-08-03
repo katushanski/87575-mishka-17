@@ -1,0 +1,61 @@
+.reviews {
+  position: relative;
+}
+
+.reviews__inner--top {
+  @include wrapper;
+}
+
+.reviews__title {
+  margin-top: 60px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $black;
+}
+
+.reviews__item {
+  margin: 0;
+  font-weight: normal;
+}
+
+.reviews__paragraph {
+  margin-top: 35px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $black;
+  text-align: left;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.reviews__author-tag {
+  margin-bottom: 0;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__inner--bottom {
+  @include wrapper;
+}
+
+.reviews__button-link {
+  display: block;
+
+  margin-top: 38px;
+  padding: 14px 0;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  @include white-button;
+}

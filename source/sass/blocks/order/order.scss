@@ -1,0 +1,41 @@
+.order__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 73px 0;
+
+  background-color: $grey;
+}
+
+.order__title {
+  box-sizing: border-box;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+
+  @include wrapper;
+}
+
+.order__paragraph-wrapper {
+  display: flex;
+  padding: 25px 0;
+
+  background-color: $white;
+}
+
+.order__paragraph {
+  box-sizing: border-box;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+
+  @include wrapper;
+}
+
+.order__form-wrapper {
+  display: flex;
+  flex-direction: column;
+}

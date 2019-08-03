@@ -1,0 +1,30 @@
+.social-buttons__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: center;
+
+  margin: 25px 0;
+  padding: 0;
+}
+
+.social-buttons__link {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+
+.social-buttons__item {
+  width: 22px;
+  height: 22px;
+  margin: 0 20px;
+
+  list-style: none;
+}
+
+.temporary-background {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #b1b1b1;
+}

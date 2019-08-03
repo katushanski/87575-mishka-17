@@ -1,0 +1,45 @@
+.contacts {
+  @include wrapper;
+}
+
+.contacts__title {
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__table-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+}
+
+.contacts__table-row td:nth-of-type(2n+1) {
+  flex-basis: 65px;
+  margin-right: 10px;
+}
+
+.contacts__table a {
+  text-decoration: none;
+  color: $black;
+}
+
+.contacts__email {
+  border-bottom: 1px solid $light-cyan;
+}
+
+.contacts__link {
+  display: block;
+
+  margin: 39px 0;
+  padding: 14px 0;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  @include white-button;
+}

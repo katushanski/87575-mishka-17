@@ -1,0 +1,41 @@
+@mixin wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+@mixin white-button {
+  border: 2px solid $asphalt;
+
+  background-color: $white;
+
+  font-weight: bold;
+  color: $asphalt;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin form-legend {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $cyan;
+
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@mixin placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #cccccc;
+  font-weight: normal;
+}
+
+@mixin text-input {
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid $black;
+}
