@@ -26,3 +26,29 @@
 
   text-decoration: none;
 }
+
+@media (min-width: $screen-m) {
+  .user-nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+
+  .user-nav__item:first-of-type {
+    flex-basis: 83px;
+    background-color: #f1f1f1;
+  }
+
+  .user-nav__item {
+    flex-basis: 265px;
+    padding-left: 0;
+    border-top: none;
+    padding: 28px 0 28px 83px;
+  }
+
+  .user-nav__transform {
+    display: flex;
+
+    font-size: 0;
+  }
+}

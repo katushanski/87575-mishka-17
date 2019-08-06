@@ -1,10 +1,15 @@
-.header {
+ .header {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
 
   @include wrapper;
+}
+
+.header__container {
+  display: flex;
+  font-direction: row;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .header__logo {
@@ -15,9 +20,41 @@
   cursor: pointer;
 }
 
-.header__container {
-  display: flex;
-  font-direction: row;
-  align-items: center;
-  padding: 20px 0;
+.header__toggle {
+  width: 20px;
+  height: 20px;
+
+  background-color: #8d0000;
+
+  border: none;
+  outline: none;
+}
+
+.header__additional {
+  display: none;
+}
+
+@media (min-width: $screen-m) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include wrapper-m;
+  }
+
+  .header__logo {
+    align-self: top;
+    flex-basis: 370px;
+    margin-right: auto;
+
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
 }

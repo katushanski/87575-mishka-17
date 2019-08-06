@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+@mixin wrapper-m {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+@mixin wrapper-l {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
 @mixin white-button {
   border: 2px solid $asphalt;
 

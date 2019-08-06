@@ -8,12 +8,12 @@
 <body>
   <header class="header">
     <div class="header__container">
-    <a class="header__logo">
-      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
-    </a>
-    <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+      </a>
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
         <!-- здесь будут иконки -->
-    </button>
+      </button>
     </div>
     <nav class="top-menu">
       <ul class="top-menu__nav site-nav">
@@ -26,13 +26,24 @@
       </ul>
       <ul class="top-menu__nav user-nav">
         <li class="user-nav__item">
-          <a class="user-nav__link" href="#">Поиск по сайту</a>
+          <a class="user-nav__link user-nav__transform" href="#">Поиск по сайту</a>
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
+      <ul class="top-menu__nav news-nav">
+        <li class="news-nav__item">
+          <a class="news-nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="news-nav__item">
+          <a class="news-nav__link" href="#">Распродажа</a>
+        </li>
+      </ul>
     </nav>
+    <p class="header__additional">
+      <span>Бесплатная доставка по России</span>
+    </p>
   </header>
 
   <main class="main">
@@ -159,13 +170,22 @@
         </tr>
       </table>
       <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCsreBJ~" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
-      <a class="contacts__link" href="#">Напишите нам</a>
+      <p class="contacts__link-wrapper">
+        <a class="contacts__link" href="#">Напишите нам</a>
+      </p>
     </section>
   </main>
 
   <footer class="footer">
     <section class="footer__wrapper">
-      <div class="social-buttons footer__social-buttons">
+
+      <div class="footer__logo footer-logo">
+        <a class="footer-logo__icon" href="index.html">
+          <!-- тут будет свг -->
+        </a>
+      </div>
+
+      <div class="footer__social-buttons social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
             <a class="social-buttons__link" href="#">
@@ -191,7 +211,7 @@
         </ul>
       </div>
 
-      <div class="website-by">
+      <div class="footer__website-by website-by">
         <a class="website-by__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span>Разработано</span>
           <!-- тут будет свг  -->

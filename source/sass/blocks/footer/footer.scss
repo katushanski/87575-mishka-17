@@ -8,10 +8,17 @@
   @include wrapper;
 }
 
-.social-buttons__item {
-  list-style: none;
+.footer__logo {
+  display: none;
 }
 
-.social-buttons__link {
-  text-decoration: none;
+@media (min-width: $screen-m) {
+  .footer {
+    padding: 30px 50px;
+  }
+
+  .footer__logo {
+    display: block;
+    background-color: #ffffff;
+  }
 }

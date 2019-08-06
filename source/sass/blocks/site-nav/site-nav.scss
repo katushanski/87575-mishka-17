@@ -26,3 +26,22 @@
 
   text-decoration: none;
 }
+
+@media (min-width: $screen-m) {
+  .site-nav {
+    flex-direction: row;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+
+  .site-nav__item {
+    flex-basis: 167px;
+    padding: 28px 0;
+    border-top: none;
+  }
+
+  .site-nav__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
