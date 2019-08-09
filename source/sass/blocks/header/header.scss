@@ -5,31 +5,6 @@
   @include wrapper;
 }
 
-.header__container {
-  display: flex;
-  font-direction: row;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.header__logo {
-  margin: auto;
-
-  list-style: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.header__toggle {
-  width: 20px;
-  height: 20px;
-
-  background-color: #8d0000;
-
-  border: none;
-  outline: none;
-}
-
 .header__additional {
   display: none;
 }
@@ -43,17 +18,16 @@
     @include wrapper-m;
   }
 
-  .header__logo {
-    align-self: top;
-    flex-basis: 370px;
-    margin-right: auto;
-
-    list-style: none;
-    text-decoration: none;
-    cursor: pointer;
+  .header__additional {
+    display: flex;
+    margin-left: auto;
   }
+}
 
-  .header__toggle {
-    display: none;
+@media (min-width: $screen-l) {
+  .header {
+    position: relative;
+
+    @include wrapper-l;
   }
 }
