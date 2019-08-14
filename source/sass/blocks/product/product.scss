@@ -2,6 +2,11 @@
   list-style: none;
 
   @include wrapper;
+  /*
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box; */
 }
 
 .product__item a {
@@ -27,7 +32,8 @@
 }
 
 .product__paragraph {
-  margin: 4px 0 17px;
+  margin: 4px 0 28px;
+  border-bottom: 1px solid #e5e5e5;
 
   font-size: 13px;
   line-height: 30px;
@@ -58,4 +64,23 @@
   padding: 0;
 
   background-color: #b1b1b1;
+}
+
+@media (min-width: $screen-m) {
+  .product {
+    display: flex;
+  }
+
+  .product__item {
+    flex-direction: row;
+
+    @include wrapper-m;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .product {
+    display: flex;
+    flex-direction: row;
+  }
 }

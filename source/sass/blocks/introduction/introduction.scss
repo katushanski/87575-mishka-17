@@ -1,5 +1,5 @@
 .introduction__inner {
-  display: block;
+  display: flex;
   width: 100%;
   height: 282px;
 
@@ -26,6 +26,7 @@
 }
 
 .introduction__link--interior {
+  width: 100%;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -53,6 +54,7 @@
 }
 
 .introduction__link--toys {
+  width: 100%;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -62,3 +64,40 @@
   background-color: $azure;
   padding: 28px 0;
 }
+
+@media (min-width: $screen-m) {
+  .introduction {
+    @include wrapper-m;
+  }
+
+  .introduction__inner-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .introduction__paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .introduction__links {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .introduction {
+    @include wrapper-l;
+  }
+
+  .introduction__inner-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .introduction__paragraph {
+    margin: 0;
+    padding-left: 37px;
+  }
+}
+

@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  flex-basis: 260px;
 
   font-weight: bold;
   text-align: left;
@@ -33,4 +32,40 @@
 
 .about__item:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: $screen-m) {
+  .about {
+    @include wrapper-m;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .about__item {
+    width: 334px;
+    padding-bottom: 58px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .about {
+    @include wrapper-l;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

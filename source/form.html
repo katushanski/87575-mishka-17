@@ -7,31 +7,40 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__container">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
-    </a>
-    <button class="header__toggle" type="button" aria-label="Открыть меню">
+    <nav class="header__top-menu top-menu">
+      <a class="top-menu__logo">
+        <img class="top-menu__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+      </a>
+      <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
         <!-- здесь будут иконки -->
-    </button>
-    </div>
-    <nav class="top-menu">
-      <ul class="top-menu__nav site-nav">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="top-menu__nav user-nav">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
+      </button>
+        <ul class="top-menu__nav site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="top-menu__nav user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__transform" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="top-menu__nav news-nav">
+          <li class="news-nav__item">
+            <a class="news-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="news-nav__item">
+            <a class="news-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="top-menu__nav additional-nav">
+          <li class="additional-nav__item">Бесплатная доставка по России</li>
+        </ul>
     </nav>
   </header>
 
@@ -150,8 +159,15 @@
   </main>
 
   <footer class="footer">
-    <section class="wrapper">
-      <div class="social-buttons footer__social-buttons">
+    <section class="footer__wrapper">
+
+      <div class="footer__logo">
+        <a class="footer__icon" href="index.html">
+          <!-- тут будет свг -->
+        </a>
+      </div>
+
+      <div class="footer__social-buttons social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
             <a class="social-buttons__link" href="#">
@@ -177,7 +193,7 @@
         </ul>
       </div>
 
-      <div class="website-by">
+      <div class="footer__website-by website-by">
         <a class="website-by__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span>Разработано</span>
           <!-- тут будет свг  -->

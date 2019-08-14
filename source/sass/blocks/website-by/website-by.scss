@@ -3,8 +3,9 @@
   flex-direction: row;
   justify-content: center;
 
-  margin: 27px 0;/*
-  border-top: 1px solid #e5e5e5; */
+  width: 100%;
+
+  margin: 27px 0;
 }
 
 .website-by__link,
@@ -25,4 +26,11 @@
 
 .website-by__link svg {
   margin-left: 30px;
+}
+
+@media (min-width: $screen-m) {
+  .website-by {
+    justify-content: flex-end;
+    width: 33%;
+  }
 }

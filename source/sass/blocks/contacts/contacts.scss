@@ -1,6 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  @include wrapper;
 }
 
 .contacts__title {
@@ -12,10 +13,11 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-align: left;
 }
 
 .contacts__table {
-  @include wrapper;
+  display: flex;
 
   font-size: 15px;
   line-height: 30px;
@@ -42,10 +44,6 @@
   border-bottom: 1px solid $light-cyan;
 }
 
-.contacts__link-wrapper {
-  @include wrapper;
-}
-
 .contacts__link {
   display: block;
 
@@ -58,4 +56,37 @@
   cursor: pointer;
 
   @include white-button;
+}
+
+@media (min-width: $screen-m) {
+  .contacts {
+    @include wrapper-m;
+  }
+
+  .contacts__title {
+    margin: 63px 0 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__table {
+    flex-direction: row;
+  }
+
+  .contacts__link-wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .contacts {
+    @include wrapper-xl;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

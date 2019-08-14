@@ -1,0 +1,32 @@
+.table__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.table__row:last-of-type {
+  border-bottom: none;
+}
+
+.table__header {
+  width: 99px;
+  text-align: left;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $black;
+}
+
+.table__data {
+  width: auto;
+  text-align: left;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $black;
+}

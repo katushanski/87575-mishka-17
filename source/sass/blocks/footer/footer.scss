@@ -17,8 +17,32 @@
     padding: 30px 50px;
   }
 
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include wrapper-m;
+  }
+
   .footer__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+  }
+
+  .footer__icon {
     display: block;
-    background-color: #ffffff;
+    width: 103px;
+    height: 37px;
+
+    background-color: #b1b1b1;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .footer__wrapper {
+    @include wrapper-l;
   }
 }

@@ -38,19 +38,19 @@
     padding-left: 0;
   }
 
+  .user-nav__item {
+    width: 265px;
+    border-top: none;
+    padding: 28px 0 0 83px;
+    text-align: right;
+  }
+
   .user-nav__item:first-of-type {
     display: block;
     width: 83px; /* Убрать, когда поставлю иконку */
     height: 20px; /* Убрать, когда поставлю иконку */
-    padding: 28px 29px 28px 375px;
+    padding: 28px 29px 28px 288px;
     background-color: #f1f1f1; /* Убрать, когда поставлю иконку */
-  }
-
-  .user-nav__item {
-    width: 265px;
-    border-top: none;
-    padding: 0 0 0 83px;
-    text-align: right;
   }
 
   .user-nav__transform {

@@ -8,15 +8,12 @@
 <body>
   <header class="header">
     <nav class="header__top-menu top-menu">
-      <div class="top-menu__top">
-        <a class="top-menu__logo">
-          <img class="top-menu__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
-        </a>
-        <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
-          <!-- здесь будут иконки -->
-        </button>
-      </div>
-      <div class="top-menu__bottom">
+      <a class="top-menu__logo">
+        <img class="top-menu__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+      </a>
+      <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+        <!-- здесь будут иконки -->
+      </button>
         <ul class="top-menu__nav site-nav">
           <li class="site-nav__item">
             <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
@@ -44,7 +41,6 @@
         <ul class="top-menu__nav additional-nav">
           <li class="additional-nav__item">Бесплатная доставка по России</li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -68,30 +64,28 @@
     </section>
 
     <section class="featured">
-      <div class ="featured__top">
-        <h2 class="featured__title featured__title--carts">Вязаные корзинки</h2>
-        <h3 class="featured__title featured__title--product">Товар недели</h3>
-        <p class="featured__top-paragraph">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="table featured__top-table">
-          <tr class="table__row">
-            <td class="table__header">Цвет:</td>
-            <td class="table__data">«Тиффани»/серый</td>
-          </tr>
-          <tr class="table__row">
-            <td class="table__header">Диаметр:</td>
-            <td class="table__data">25 см</td>
-          </tr>
-          <tr class="table__row">
-            <td class="table__header">Высота:</td>
-            <td class="table__data">15 см</td>
-          </tr>
-        </table>
+      <div class ="featured__titles">
+        <h2 class="featured__title--carts">Вязаные корзинки</h2>
+        <h3 class="featured__title--product">Товар недели</h3>
       </div>
-      <div class="featured__bottom">
-        <img class="featured__bottom-image" src="../img/triple-set-mobile@1x.jpg" alt="Фото товара недели" width="260" height="315">
-        <span class="featured__bottom-span">Цена 990 руб.</span>
-        <button class="featured__bottom-button js-modal">Заказать</button>
-      </div>
+      <p class="featured__paragraph">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <table class="table featured__table">
+        <tr class="table__row">
+          <td class="table__header">Цвет:</td>
+          <td class="table__data">«Тиффани»/серый</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__header">Диаметр:</td>
+          <td class="table__data">25 см</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__header">Высота:</td>
+          <td class="table__data">15 см</td>
+        </tr>
+      </table>
+      <img class="featured__image" src="../img/triple-set-mobile@1x.jpg" alt="Фото товара недели" width="260" height="315">
+      <span class="featured__span">Цена 990 руб.</span>
+      <button class="featured__button js-modal">Заказать</button>
     </section>
 
     <section class="modal modal--window modal--hide">
@@ -134,8 +128,8 @@
     </section>
 
     <section class="reviews">
-      <div class="reviews__inner--top">
-      <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__inner">
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__items">
           <blockquote class="reviews__item slider__item">
             <p class="reviews__paragraph">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -147,14 +141,11 @@
             <cite class="reviews__author-name">Марк Цицерон</cite>
             <p class="reviews__author-tag">@marcuscicero</p>
           </blockquote>
+          <p class="reviews__arrows slider__arrows">
+            <button class="slider__arrow" type="button"><!-- здесь будет свг --></button>
+            <button class="slider__arrow" type="button"><!-- здесь будет свг --></button>
+          </p>
         </div>
-      </div>
-      <div class="reviews__inner--bottom">
-        <p class="reviews__arrows slider__arrows">
-          <button class="slider__arrow" type="button"><!-- здесь будет свг --></button>
-          <button class="slider__arrow" type="button"><!-- здесь будет свг --></button>
-        </p>
-        <div class="reviews__button">
         <a class="reviews__button-link" href="#">Написать</a>
       </div>
     </section>
@@ -181,8 +172,8 @@
   <footer class="footer">
     <section class="footer__wrapper">
 
-      <div class="footer__logo footer-logo">
-        <a class="footer-logo__icon" href="index.html">
+      <div class="footer__logo">
+        <a class="footer__icon" href="index.html">
           <!-- тут будет свг -->
         </a>
       </div>

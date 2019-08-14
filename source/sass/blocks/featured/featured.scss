@@ -1,75 +1,42 @@
 .featured {
   display: flex;
   flex-direction: column;
-}
 
-.featured__top {
   @include wrapper;
 }
 
-.featured__top-title--carts {
+.featured__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__title--carts {
+  margin: 30px 0 0;
   font-size: 25px;
   line-height: 30px;
 }
 
-.featured__top-title--product {
+.featured__title--product {
+  margin: 0;
   font-size: 17px;
   line-height: 20px;
+  text-transform: uppercase;
+  color: $cyan;
 }
 
-.featured__top-paragraph {
+.featured__paragraph {
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
   color: $black;
 }
 
-.featured__top-table {
+.featured__table {
   display: flex;
   flex-direction: column;
 }
 
-.table__row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  width: 100%;
-  padding: 10px 0;
-  border-bottom: 1px solid #ececec;
-}
-
-.table__row:last-of-type {
-  border-bottom: none;
-}
-
-.table__header {
-  width: 99px;
-  text-align: left;
-
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: normal;
-  color: $black;
-}
-
-.table__data {
-  width: auto;
-  text-align: left;
-
-  font-size: 15px;
-  line-height: 20px;
-  color: $black;
-}
-
-.featured__bottom {
-  display: flex;
-  flex-direction: column;
-
-  @include wrapper;
-}
-
-.featured__bottom-span {
+.featured__span {
   padding: 25px 0;
 
   font-size: 17px;
@@ -78,7 +45,7 @@
   text-align: center;
 }
 
-.featured__bottom-button {
+.featured__button {
   padding: 14px 0;
   background-color: $white;
 
@@ -86,4 +53,74 @@
   line-height: 20px;
 
   @include white-button;
+}
+
+@media (min-width: $screen-m) {
+  .featured {
+    @include wrapper-m;
+  }
+
+  .featured__titles {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .featured__title--carts {
+    margin-top: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured__title--product {
+    max-width: 134px;
+    margin-top: 60px;
+    margin-left: auto;
+
+    text-align: center;
+    line-height: 17px;
+  }
+
+  .featured__paragraph,
+  .featured__table,
+  .featured__span,
+  .featured__button {
+    max-width: 290px;
+  }
+
+  .featured__main {
+    position: relative;
+
+    flex-direction: row;
+  }
+
+  .featured__image {
+    position: absolute;
+    top: 740px;
+    left: 384px;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .featured {
+    padding: 0 80px;
+
+    @include wrapper-xl;
+  }
+
+  .featured__title--carts {
+    order: 1;
+    margin-left: 17px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .featured__title--product {
+    order: 0;
+    margin-left: -150px;
+  }
+
+  .featured__paragraph {
+
+  }
 }

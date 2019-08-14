@@ -28,5 +28,33 @@
   padding: 18px 0 14px;
   box-sizing: border-box;
 
+  font-size: 17px;
+  line-height: 16px;
+
   @include white-button;
+}
+
+@media (min-width: $screen-m) {
+  .catalog-video {
+    @include wrapper-m;
+  }
+
+  .catalog-video__title {
+    align-self: flex-start;
+  }
+
+  .catalog-video__video {
+    order: -1;
+  }
+
+  .catalog-video__button{
+    width: 581px;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .catalog-video {
+    @include wrapper-l;
+    flex-direction: row;
+  }
 }
