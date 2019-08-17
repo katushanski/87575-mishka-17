@@ -3,9 +3,9 @@
   flex-direction: column;
 }
 
-  .header__container {
-    @include wrapper;
-  }
+.header__container {
+   @include wrapper;
+}
 
 @media (min-width: $screen-m) {
   .header {
