@@ -7,41 +7,43 @@
 </head>
 <body>
   <header class="header">
-    <nav class="header__top-menu top-menu">
-      <a class="top-menu__logo">
-        <img class="top-menu__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
-      </a>
-      <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
-        <!-- здесь будут иконки -->
-      </button>
-        <ul class="top-menu__nav site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="top-menu__nav user-nav">
-          <li class="user-nav__item">
-            <a class="user-nav__link user-nav__transform" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="top-menu__nav news-nav">
-          <li class="news-nav__item">
-            <a class="news-nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="news-nav__item">
-            <a class="news-nav__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="top-menu__nav additional-nav">
-          <li class="additional-nav__item">Бесплатная доставка по России</li>
-        </ul>
-    </nav>
+    <div class="header__container">
+      <nav class="header__top-menu top-menu">
+        <a class="top-menu__logo">
+          <img class="top-menu__logo-image" href="index.html" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+        </a>
+        <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+          <!-- здесь будут иконки -->
+        </button>
+          <ul class="top-menu__nav site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="top-menu__nav user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__transform" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="top-menu__nav news-nav">
+            <li class="news-nav__item">
+              <a class="news-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="news-nav__item">
+              <a class="news-nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="top-menu__nav additional-nav">
+            <li class="additional-nav__item">Бесплатная доставка по России</li>
+          </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
@@ -62,10 +64,10 @@
               <h3 class="product__title">Зайчик-попрыгайчик</h3>
             </a>
             <p class="product__paragraph">Рост 30 см, вес 200 г</p>
-          <p class="product__price">
-            <b>1200 руб.</b>
-            <button class="js-modal product__button" href="#"></button>
-          </p>
+            <p class="product__price">
+              <b>1200 руб.</b>
+              <button class="js-modal product__button" href="#"></button>
+            </p>
           </div>
         </li>
 
@@ -80,11 +82,11 @@
               <h3 class="product__title">Корзинка для белья</h3>
             </a>
             <p class="product__paragraph">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">
+              <b>690 руб.</b>
+              <button class="js-modal product__button" href="#"></button>
+            </p>
           </div>
-          <p class="product__price">
-            <b>690 руб.</b>
-            <button class="js-modal product__button" href="#"></button>
-          </p>
         </li>
 
         <li class="product__item">
@@ -98,11 +100,11 @@
               <h3 class="product__title">Большая корзинка для игрушек</h3>
             </a>
             <p class="product__paragraph">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">
+              <b>1500 руб.</b>
+              <button class="js-modal product__button" href="#"></button>
+            </p>
           </div>
-          <p class="product__price">
-            <b>1500 руб.</b>
-            <button class="js-modal product__button" href="#"></button>
-          </p>
         </li>
       </ul>
     </section>

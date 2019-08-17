@@ -45,13 +45,14 @@
   }
 
   .about__list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .about__item {
-    width: 334px;
+    width: 275px;
     padding-bottom: 58px;
 
     font-size: 20px;
@@ -61,7 +62,9 @@
 
 @media (min-width: $screen-l) {
   .about {
-    @include wrapper-l;
+    padding: 0 80px;
+
+    @include wrapper-xl;
   }
 
   .about__title {

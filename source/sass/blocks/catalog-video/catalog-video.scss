@@ -1,4 +1,5 @@
 .catalog-video {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +38,8 @@
 @media (min-width: $screen-m) {
   .catalog-video {
     @include wrapper-m;
+
+    margin-top: 55px;
   }
 
   .catalog-video__title {
@@ -55,6 +58,21 @@
 @media (min-width: $screen-l) {
   .catalog-video {
     @include wrapper-l;
-    flex-direction: row;
+
+    width: 230px;
+  }
+
+  .catalog-video__title,
+  .catalog-video p {
+    margin-left: 0;
+  }
+
+  .catalog-video__video {
+    position: absolute;
+    left: 0;
+  }
+
+  .catalog-video__button{
+    width: 230px;
   }
 }

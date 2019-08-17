@@ -2,11 +2,6 @@
   list-style: none;
 
   @include wrapper;
-  /*
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box; */
 }
 
 .product__item a {
@@ -72,7 +67,9 @@
   }
 
   .product__item {
+    display: flex;
     flex-direction: row;
+
 
     @include wrapper-m;
   }
@@ -82,5 +79,9 @@
   .product {
     display: flex;
     flex-direction: row;
+  }
+
+  .product__item {
+    flex-direction: column;
   }
 }

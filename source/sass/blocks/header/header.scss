@@ -1,9 +1,11 @@
 .header {
   display: flex;
   flex-direction: column;
-
-  @include wrapper;
 }
+
+  .header__container {
+    @include wrapper;
+  }
 
 @media (min-width: $screen-m) {
   .header {
@@ -11,9 +13,11 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    @include wrapper-m;
-
     background-color: $light-grey;
+  }
+
+  .header__container {
+    @include wrapper-m;
   }
 
   .header::before {
@@ -34,7 +38,9 @@
 @media (min-width: $screen-l) {
   .header {
     position: relative;
+  }
 
+  .header__container {
     @include wrapper-l;
   }
 }
