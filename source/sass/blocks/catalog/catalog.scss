@@ -23,3 +23,9 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $screen-l) {
+  .catalog__products {
+    @include wrapper-l;
+  }
+}

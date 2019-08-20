@@ -64,14 +64,27 @@
 @media (min-width: $screen-m) {
   .product {
     display: flex;
+
+    margin-top: 81px;
   }
 
   .product__item {
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 54px;
 
     @include wrapper-m;
+  }
+
+  .product__description {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 54px;
+  }
+
+  .product__price{
+    margin-top: auto;
   }
 }
 

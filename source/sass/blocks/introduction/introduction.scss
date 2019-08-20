@@ -88,6 +88,8 @@
   .introduction__links {
     display: flex;
     flex-direction: row;
+
+    @include wrapper-m;
   }
 }
 
@@ -104,5 +106,9 @@
   .introduction__paragraph {
     margin: 0;
     padding-left: 37px;
+  }
+
+  .introduction__links {
+    @include wrapper-l;
   }
 }

@@ -1,11 +1,17 @@
 .catalog-video {
   position: relative;
+
+  @include wrapper;
+
+  margin-bottom: 60px;
+}
+
+.catalog-video__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @include wrapper;
   padding-bottom: 33px;
+  border: 1px solid $grey;
 }
 
 .catalog-video__title {
@@ -33,33 +39,36 @@
   line-height: 16px;
 
   @include white-button;
+  margin: 0 auto;
 }
 
 @media (min-width: $screen-m) {
   .catalog-video {
     @include wrapper-m;
 
-    margin-top: 55px;
+    margin-bottom: 64px;
   }
 
   .catalog-video__title {
     align-self: flex-start;
   }
 
-  .catalog-video__video {
+  .catalog-video__content {
+    position: absolute;
     order: -1;
   }
 
   .catalog-video__button {
     width: 581px;
+    margin: 0 auto;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $screen-l) {
   .catalog-video {
     @include wrapper-l;
-
-    width: 230px;
+    margin-bottom: 105px;
   }
 
   .catalog-video__title,

@@ -57,8 +57,12 @@
       <div class="order__form-wrapper">
         <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
 
+        <div class="order-form__fieldset-wrapper">
           <fieldset class="order-form__fieldset fieldset">
-            <legend>Тип</legend>
+            <div class="order-form__legend-wrapper">
+              <legend>Тип</legend>
+            </div>
+            <div class="order-form__list-wrapper">
             <ul class="fieldset__radio-list">
               <li class="fieldset__radio radio">
                 <input class="radio__input" type="radio" id="accessory-toggle" name="toggle" value="accessory">
@@ -69,7 +73,9 @@
                 <label for="toy-toggle">Детская игрушка</label>
               </li>
             </ul>
+            </div>
           </fieldset>
+        </div>
 
           <fieldset class="order-form__fieldset fieldset">
             <legend>Цвет</legend>

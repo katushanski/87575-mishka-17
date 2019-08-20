@@ -19,7 +19,7 @@
 
 .order__paragraph-wrapper {
   display: flex;
-  padding: 25px 0;
+  margin: 25px 0;
 
   background-color: $white;
 }
@@ -38,4 +38,47 @@
 .order__form-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $screen-m) {
+  .order__title-wrapper {
+    padding: 105px 0 78px;
+  }
+
+  .order__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    @include wrapper-m;
+  }
+
+  .order__paragraph-wrapper {
+    margin-top: 70px;
+  }
+
+  .order__paragraph {
+    font-size: 17px;
+    line-height: 30px;
+
+    @include wrapper-m;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .order__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    @include wrapper-l;
+  }
+
+  .order__paragraph-wrapper {
+    margin-top: 130px;
+  }
+
+  .order__paragraph {
+    @include wrapper-l;
+
+    padding: 0 225px;
+  }
 }
