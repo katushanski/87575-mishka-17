@@ -21,11 +21,19 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 30px;
+}
+
+@media (min-width: $screen-m) {
+  .catalog__products {
+    padding: 0;
+  }
 }
 
 @media (min-width: $screen-l) {
   .catalog__products {
     @include wrapper-l;
+
+    padding: 0;
   }
 }

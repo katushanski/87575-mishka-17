@@ -1,4 +1,6 @@
 .top-menu {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -12,6 +14,10 @@
 }
 
 .top-menu__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0;
+
   width: 20px;
   height: 20px;
 

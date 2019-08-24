@@ -3,27 +3,15 @@
   flex-direction: column;
 
   @include wrapper;
-}
 
-.order-form__fieldset {
-  display: flex;
-  flex-direction: column;
-
-  margin-top: 30px;
-  padding: 0;
-  border: none;
-  border-top: 1px solid $cyan;
-}
-
-.order-form__fieldset li {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  padding-top: 30px;
 }
 
 .order-form__bottom {
   display: flex;
   flex-direction: column;
+
+  @include wrapper;
 }
 
 .order-form__required-text {
@@ -47,17 +35,15 @@
 @media (min-width: $screen-m) {
   .order-form {
     @include wrapper-m;
-  }
 
-  .order-form__fieldset {
-    display: flex;
-    flex-direction: row;
-    border-top: none;
+    padding-top: 0;
   }
 
   .order-form__bottom {
     flex-direction: row;
     justify-content: space-between;
+
+    @include wrapper-m;
   }
 
   .order-form__required-text {
@@ -74,6 +60,14 @@
 
 @media (min-width: $screen-l) {
   .order-form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .order-form__bottom {
     @include wrapper-l;
+
+    padding: 0 225px;
   }
 }
