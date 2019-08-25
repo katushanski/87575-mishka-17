@@ -78,11 +78,7 @@
 
 .fieldset__text-list label {
   margin: 25px 0 20px 0;
-}/*
-
-.fieldset__text-list label:first-of-type {
-  margin-top: 0;
-} */
+}
 
 .fieldset .radio__input,
 .fieldset .checkbox__input {
@@ -112,7 +108,7 @@
 }
 
 @media (min-width: $screen-m) {
-  .fieldset{
+  .fieldset {
     padding: 50px 0;
   }
 
