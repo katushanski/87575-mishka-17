@@ -18,13 +18,13 @@
   @include wrapper;
 }
 
-.catalog__title-wrapper:after {
+.catalog__title-wrapper::after {
   content: none;
   position: absolute;
   left: 0;
   right: 0;
 
-  background-image: url(../img/bg-zigzag-fill.svg);
+  background-image: url("../img/bg-zigzag-fill.svg");
   background-repeat: repeat-x;
 }
 
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: $screen-m) {
-  .catalog__title-wrapper:after {
+  .catalog__title-wrapper::after {
     content: "";
     bottom: -12px;
     height: 24px;
@@ -61,7 +61,7 @@
 }
 
 @media (min-width: $screen-l) {
-  .catalog__title-wrapper:after {
+  .catalog__title-wrapper::after {
     bottom: -17px;
     height: 34px;
 

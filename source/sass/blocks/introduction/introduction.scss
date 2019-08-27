@@ -2,13 +2,13 @@
   background-color: $light-grey;
 }
 
-.introduction:after {
+.introduction::after {
   content: none;
   position: absolute;
   left: 0;
   right: 0;
 
-  background-image: url(../img/bg-zigzag-fill.svg);
+  background-image: url("../img/bg-zigzag-fill.svg");
   background-repeat: repeat-x;
 }
 
@@ -83,7 +83,7 @@
 }
 
 @media (min-width: $screen-m) {
-  .introduction:after {
+  .introduction::after {
     content: "";
     bottom: -12px;
     height: 24px;
@@ -115,7 +115,7 @@
 }
 
 @media (min-width: $screen-l) {
-  .introduction:after {
+  .introduction::after {
     bottom: -17px;
     height: 34px;
 

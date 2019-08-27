@@ -19,12 +19,12 @@
   @include wrapper;
 }
 
-.order__title-wrapper:after {
+.order__title-wrapper::after {
   content: none;
   position: absolute;
   left: 0;
   right: 0;
-  background-image: url(../img/bg-zigzag-fill.svg);
+  background-image: url("../img/bg-zigzag-fill.svg");
   background-repeat: repeat-x;
 }
 
@@ -51,7 +51,7 @@
     padding: 105px 0 78px;
   }
 
-  .order__title-wrapper:after {
+  .order__title-wrapper::after {
     content: "";
     bottom: -12px;
     height: 24px;
@@ -90,7 +90,7 @@
     margin-top: 130px;
   }
 
-  .order__title-wrapper:after {
+  .order__title-wrapper::after {
     bottom: -17px;
     height: 34px;
     background-size: 1150px 34px;
