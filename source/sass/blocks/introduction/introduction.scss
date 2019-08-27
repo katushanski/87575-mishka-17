@@ -1,4 +1,5 @@
 .introduction {
+  position: relative;
   background-color: $light-grey;
 }
 
@@ -89,7 +90,6 @@
     height: 24px;
 
     background-size: 768px 24px;
-    background-position-x: 0;
   }
 
   .introduction__inner {
