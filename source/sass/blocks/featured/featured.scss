@@ -59,6 +59,8 @@
 @media (min-width: $screen-m) {
   .featured {
     @include wrapper-m;
+
+    margin-bottom: 68px;
   }
 
   .featured__titles {

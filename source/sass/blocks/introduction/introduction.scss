@@ -2,6 +2,16 @@
   background-color: $light-grey;
 }
 
+.introduction:after {
+  content: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  background-image: url(../img/bg-zigzag-fill.svg);
+  background-repeat: repeat-x;
+}
+
 .introduction__inner {
   display: flex;
   width: 100%;
@@ -9,6 +19,7 @@
 
   margin: 0;
   padding: 75px 0 0;
+
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 95%;
@@ -61,6 +72,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+
   text-decoration: none;
   cursor: pointer;
 }
@@ -71,6 +83,15 @@
 }
 
 @media (min-width: $screen-m) {
+  .introduction:after {
+    content: "";
+    bottom: -12px;
+    height: 24px;
+
+    background-size: 768px 24px;
+    background-position-x: 0;
+  }
+
   .introduction__inner {
     @include wrapper-m;
   }
@@ -94,6 +115,13 @@
 }
 
 @media (min-width: $screen-l) {
+  .introduction:after {
+    bottom: -17px;
+    height: 34px;
+
+    background-size: 1150px 34px;
+  }
+
   .introduction__inner {
     @include wrapper-l;
   }
