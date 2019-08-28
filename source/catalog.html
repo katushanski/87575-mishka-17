@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -6,33 +6,44 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header header__bg--grey">
     <div class="header__container">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
-    </a>
-    <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
-        <!-- здесь будут иконки -->
-    </button>
+      <nav class="header__top-menu top-menu">
+        <a class="top-menu__logo" href="index.html">
+          <img class="top-menu__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+        </a>
+        <button class="top-menu__toggle" type="button" aria-label="Открыть меню">
+          <!-- здесь будут иконки -->
+        </button>
+          <ul class="top-menu__nav site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="top-menu__nav user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__transform" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="top-menu__nav news-nav">
+            <li class="news-nav__item">
+              <a class="news-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="news-nav__item">
+              <a class="news-nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="top-menu__nav additional-nav">
+            <li class="additional-nav__item">Бесплатная доставка по России</li>
+          </ul>
+      </nav>
     </div>
-    <nav class="top-menu">
-      <ul class="top-menu__nav site-nav">
-        <li class="site-nav__item">
-          <a class="site-nav__link">Каталог товаров</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="top-menu__nav user-nav">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="main">
@@ -43,73 +54,81 @@
       <h2 class="visually-hidden">Товары</h2>
       <ul class="catalog__products product">
         <li class="product__item">
-          <a href="#">
-            <p class="product__image">
-              <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото Зайчика">
-            </p>
+          <a class="product__image-link" href="#">
+            <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Фото Зайчика">
           </a>
           <div class="product__description">
             <a href="#">
               <h3 class="product__title">Зайчик-попрыгайчик</h3>
             </a>
             <p class="product__paragraph">Рост 30 см, вес 200 г</p>
+            <p class="product__price">
+              <b>1200 руб.</b>
+              <button class="js-modal product__button" href="#"></button>
+            </p>
           </div>
-          <p class="product__price">
-            <b>1200 руб.</b>
-            <button class="js-modal product__button" href="#"></button>
-          </p>
         </li>
 
         <li class="product__item">
-          <a href="#">
-            <p class="product__image">
-              <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото корзинки">
-            </p>
+          <a class="product__image-link" href="#">
+            <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Фото корзинки">
           </a>
           <div class="product__description">
             <a href="#">
               <h3 class="product__title">Корзинка для белья</h3>
             </a>
             <p class="product__paragraph">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">
+              <b>690 руб.</b>
+              <button class="js-modal product__button" href="#"></button>
+            </p>
           </div>
-          <p class="product__price">
-            <b>690 руб.</b>
-            <button class="js-modal product__button" href="#"></button>
-          </p>
         </li>
 
         <li class="product__item">
-          <a href="#">
-            <p class="product__image">
-              <img src="http://placehold.it/260*150" width="260" height="150" alt="Фото большой корзинки">
-            </p>
+          <a class="product__image-link" href="#">
+            <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Фото большой корзинки">
           </a>
           <div class="product__description">
             <a href="#">
               <h3 class="product__title">Большая корзинка для игрушек</h3>
             </a>
             <p class="product__paragraph">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">
+              <b>1500 руб.</b>
+              <button class="js-modal product__button" href="#"></button>
+            </p>
           </div>
-          <p class="product__price">
-            <b>1500 руб.</b>
-            <button class="js-modal product__button" href="#"></button>
-          </p>
         </li>
       </ul>
     </section>
 
-    <section class="catalog-video"><!-- 6.3. В блоке видеоплеера «Процесс производства» необходимо реализовать контейнер для плеера с видеозаписью (скрипт видеоплеера на страницу добавлять не нужно, достаточно добавить только изображение из макета). -->
-      <h2 class="visually-hidden">Видео для каталога</h2>
-      <h3 class="catalog-video__title">Процесс производства</h3>
-      <img  class="catalog-video__video" src="http://placehold.it/260x150" alt="Видео">
-      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="catalog-video__button" href="#">Сделать заказ</a>
+    <section class="catalog-video">
+      <div class="catalog-video__wrapper">
+        <h2 class="visually-hidden">Видео для каталога</h2>
+        <h3 class="catalog-video__title">Процесс производства</h3>
+        <div class="catalog-video__content">
+          <video class="catalog-video__video" aria-label="Видео"></video>
+          <button class="catalog-video__play-button" type="button" aria-label="Воспроизвести"></button>
+        </div>
+        <div class="catalog-video__description">
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="catalog-video__button" href="#">Сделать заказ</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <section class="footer__wrapper">
-      <div class="social-buttons footer__social-buttons">
+
+      <div class="footer__logo">
+        <a class="footer__icon" href="index.html">
+          <!-- тут будет свг -->
+        </a>
+      </div>
+
+      <div class="footer__social-buttons social-buttons">
         <ul class="social-buttons__list">
           <li class="social-buttons__item">
             <a class="social-buttons__link" href="#">
@@ -135,7 +154,7 @@
         </ul>
       </div>
 
-      <div class="website-by">
+      <div class="footer__website-by website-by">
         <a class="website-by__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span>Разработано</span>
           <!-- тут будет свг  -->

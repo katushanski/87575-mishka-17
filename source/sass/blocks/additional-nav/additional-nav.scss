@@ -1,0 +1,22 @@
+.additional-nav {
+  display: none;
+}
+
+@media (min-width: $screen-m) {
+  .additional-nav {
+    order: 5;
+    display: flex;
+
+    margin: 0;
+    margin-left: auto;
+    padding: 22px 0;
+    list-style: none;
+  }
+
+  .additional-nav__item {
+    margin-left: auto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}

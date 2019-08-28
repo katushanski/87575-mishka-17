@@ -1,6 +1,9 @@
 .site-nav {
   display: flex;
   flex-direction: column;
+
+  margin: 0;
+  padding-left: 0;
 }
 
 .site-nav__item {
@@ -25,4 +28,34 @@
   color: $black;
 
   text-decoration: none;
+}
+
+@media (min-width: $screen-m) {
+  .site-nav {
+    order: 3;
+    flex-direction: row;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+
+  .site-nav__item {
+    width: 167px;
+    padding: 23px 0;
+    border-top: none;
+  }
+
+  .site-nav__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .site-nav {
+    order: 1;
+  }
+
+  .site-nav__link {
+    font-size: 17px;
+  }
 }

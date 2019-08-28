@@ -1,22 +1,15 @@
-.order-form__fieldset {
+.order-form {
   display: flex;
   flex-direction: column;
 
-  margin-top: 30px;
-  padding: 0;
-  border: none;
-  border-top: 1px solid $cyan;
-}
-
-.order-form__fieldset li {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  padding-top: 30px;
 }
 
 .order-form__bottom {
   display: flex;
   flex-direction: column;
+
+  @include wrapper;
 }
 
 .order-form__required-text {
@@ -35,4 +28,35 @@
   line-height: 16px;
 
   @include white-button;
+}
+
+@media (min-width: $screen-m) {
+  .order-form {
+    padding-top: 0;
+  }
+
+  .order-form__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include wrapper-m;
+  }
+
+  .order-form__required-text {
+    order: 2;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__submit-button {
+    padding: 18px 31px;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .order-form__bottom {
+    width: 1150px;
+    padding: 0 225px;
+  }
 }

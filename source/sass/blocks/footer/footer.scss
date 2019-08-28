@@ -1,17 +1,53 @@
 .footer {
   display: flex;
   flex-direction: column;
+
   background-color: #f1f1f1;
 }
 
 .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
   @include wrapper;
 }
 
-.social-buttons__item {
-  list-style: none;
+.footer__logo {
+  display: none;
 }
 
-.social-buttons__link {
-  text-decoration: none;
+@media (min-width: $screen-m) {
+  .footer {
+    flex-direction: row;
+    padding: 30px 0;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include wrapper-m;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+  }
+
+  .footer__icon {
+    display: block;
+    width: 103px;
+    height: 37px;
+
+    background-color: #b1b1b1;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .footer__wrapper {
+    @include wrapper-l;
+  }
 }

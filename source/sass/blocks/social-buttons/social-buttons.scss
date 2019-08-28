@@ -1,10 +1,18 @@
-.social-buttons__list {
+.social-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  vertical-align: center;
+  align-content: center;
 
-  margin: 25px 0;
+  width: 100%;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social-buttons__list {
+  display: flex;
+
+  margin: 27px 0;
   padding: 0;
 }
 
@@ -12,6 +20,8 @@
   display: inline-block;
   width: 22px;
   height: 22px;
+
+  text-decoration: none;
 }
 
 .social-buttons__item {
@@ -27,4 +37,11 @@
   width: 22px;
   height: 22px;
   background-color: #b1b1b1;
+}
+
+@media (min-width: $screen-m) {
+  .social-buttons {
+    border-bottom: none;
+    width: 33%;
+  }
 }

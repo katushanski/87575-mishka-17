@@ -1,9 +1,23 @@
 .top-menu {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
 
+.top-menu__logo {
+  margin: 20px auto;
+
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .top-menu__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0;
+
   width: 20px;
   height: 20px;
 
@@ -13,8 +27,31 @@
   outline: none;
 }
 
-.top-menu__nav {
-  display: flex;
-  padding: 0;
-  margin: 0;
+@media (min-width: $screen-m) {
+  .top-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .top-menu__logo {
+    margin: 0;
+    padding-top: 23px;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .top-menu__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .top-menu__logo {
+    position: absolute;
+    top: 0;
+    left: 43%;
+  }
 }

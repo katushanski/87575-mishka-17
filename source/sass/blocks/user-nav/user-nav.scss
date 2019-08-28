@@ -1,6 +1,9 @@
 .user-nav {
   display: flex;
   flex-direction: column;
+
+  margin: 0;
+  padding-left: 0;
 }
 
 .user-nav__item {
@@ -25,4 +28,44 @@
   color: $black;
 
   text-decoration: none;
+}
+
+@media (min-width: $screen-m) {
+  .user-nav {
+    order: 2;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+
+  .user-nav__item {
+    width: 265px;
+    border-top: none;
+    padding: 28px 0 0 83px;
+    text-align: right;
+  }
+
+  .user-nav__item:first-of-type {
+    display: block;
+    width: 83px; /* Убрать, когда поставлю иконку */
+    height: 20px; /* Убрать, когда поставлю иконку */
+    padding: 28px 29px 28px 288px;
+    background-color: #f1f1f1; /* Убрать, когда поставлю иконку */
+  }
+
+  .user-nav__transform {
+    display: flex;
+
+    font-size: 0;
+  }
+}
+
+@media (min-width: $screen-l) {
+  .user-nav__item:first-of-type {
+    padding: 28px 29px 28px 422px;
+  }
+
+  .user-nav__item {
+    padding: 23px 0;
+  }
 }
